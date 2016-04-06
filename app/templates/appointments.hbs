@@ -1,0 +1,22 @@
+<div class="jumbotron text-center">
+    <h1>Create an appointment</h1>
+
+    <br/><br/>
+
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Subject</label>
+      {{input type="text" value=appointmentSubject class="form-control" placeholder="What you want on your hair..." autofocus="autofocus"}}
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Date:</label>
+      {{input type="text" value=appointmentDate class="form-control" placeholder="When..." autofocus="autofocus"}}
+    </div>
+
+    <div class="form-group">
+      <button class="btn btn-primary btn-lg btn-block" disabled={{isValidAppointment}} {{action 'addAppointment'}}>Add</button>
+    </div>
+    <br/><br/>
+
+    <h1>View all appointments</h1>
+</div>

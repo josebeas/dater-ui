@@ -10,12 +10,12 @@ export default Ember.Controller.extend({
 
   emailAddress: '',
 
-  actualEmailAddress: Ember.computed('emailAddress', function() { 
+  actualEmailAddress: Ember.computed('emailAddress', function() {
     console.log('actualEmailAddress function is called: ', this.get('emailAddress'));
   }),
 
-  emailAddressChanged: Ember.observer('emailAddress', function() { 
-    console.log('observer is called', this.get('emailAddress')); 
+  emailAddressChanged: Ember.observer('emailAddress', function() {
+    console.log('observer is called', this.get('emailAddress'));
   }),
 
   actions: {
